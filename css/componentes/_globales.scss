@@ -237,3 +237,28 @@ body {
     }
 }
 
+/*Cards Large*/
+.cards-large {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--bg-color-cards);
+    box-shadow: 0 1px 6px 0 #20212447;
+    h1 {
+        color: var(--color-Negro-h1);
+        font-size: calc(2em + 2vw);
+        font-weight: var(--Fuente-Weight2);
+    }
+    h3 {
+        color: var(--color-Gris-p);
+        font-size: 16px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-weight: var(--Fuente-Weight1);
+    }
+}
