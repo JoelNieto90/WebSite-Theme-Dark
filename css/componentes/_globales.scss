@@ -119,4 +119,20 @@ body {
     margin: auto;
     padding: 10px 20px;
     cursor: pointer;
+    h1 {
+        color: var(--color-Negro-h1);
+        font-weight: var(--Weight-Negro-h1);
+        font-size: calc(0.95em + 1vw);
+        @include media(mobile-only){
+            font-size: calc(1em + 1vw);
+        }
+    }
+    p {
+        color: var(--color-Gris-p);
+        font-weight: var(--Fuente-Weight2);
+        font-size: calc(0.3em + 0.5vw);
+        text-transform: uppercase;
+        @include media(mobile-only){
+            font-size: calc(0.5em + 0.5vw);
+        }
 }
