@@ -107,3 +107,16 @@ body {
     grid-gap: 25px;
     border: 2px solid blue;
 }
+
+/*Encabezado*/
+.nav-area-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 80%;
+    height: 40%;
+    border: 1px solid red;
+    margin: auto;
+    padding: 10px 20px;
+    cursor: pointer;
+}
