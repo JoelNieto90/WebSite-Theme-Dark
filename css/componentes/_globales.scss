@@ -37,3 +37,18 @@ body {
     background-size: 100%;*/
     color: var(--font-color);
 }
+
+.container {
+    display: grid;
+    grid-template-rows: 135px 245px 80px 140px 140px;
+    grid-template-columns: 165px 1fr 1fr 1fr 165px;
+    height: 100%;
+    grid-template-areas: "area-1 area-1 area-1 area-1 area-1 "
+                         ". area-2 area-2 area-2 ."
+                         ". area-3 area-3 area-3 ."
+                         ". area-4 area-4 area-4 ."
+                         ". area-4 area-4 area-4 .";
+    border: 2px solid blue;
+    background-color: var(--bg-color);
+    grid-gap: 12px;
+}
