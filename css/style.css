@@ -247,3 +247,50 @@ body {
   box-shadow: 0 1px 6px 0 #20212447;
   border: 3px solid green;
 }
+
+.cards-small-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  border: 2px solid brown;
+  margin: 15px 35px 5px 15px;
+}
+.cards-small-icon p {
+  color: var(--color-Gris-p);
+  font-weight: var(--Weight-Gris-p);
+  font-size: calc(0.5em + 0.5vw);
+  padding-left: 8px;
+}
+.cards-small-icon h1 {
+  color: var(--color-Negro-h1);
+  font-size: calc(1em + 1vw);
+  font-weight: var(--Fuente-Weight2);
+  padding-left: 10px;
+}
+.cards-small-icon .cards-small-img {
+  display: flex;
+  margin-top: 20px;
+}
+
+.cards-small-icon-up {
+  color: var(--color-Lime-Green);
+  font-size: 20px;
+}
+.cards-small-icon-up a img {
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.cards-small-icon-down {
+  color: var(--color-Bright-Red);
+  font-size: 20px;
+}
+.cards-small-icon-down a img {
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.cards-small:hover {
+  background-color: var(--bg-color-cards-hover);
+}
