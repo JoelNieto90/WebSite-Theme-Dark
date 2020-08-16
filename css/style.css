@@ -89,7 +89,6 @@ body {
   grid-template-columns: 165px 1fr 1fr 1fr 165px;
   height: 100%;
   grid-template-areas: "area-1 area-1 area-1 area-1 area-1 " ". area-2 area-2 area-2 ." ". area-3 area-3 area-3 ." ". area-4 area-4 area-4 ." ". area-4 area-4 area-4 .";
-  border: 2px solid blue;
   background-color: var(--bg-color);
   grid-gap: 12px;
   /*Incluir Version Mobil*/
@@ -106,7 +105,6 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 9;
   grid-area: area-1;
-  border: 1px solid red;
   background-color: var(--bg-color-header);
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -127,7 +125,6 @@ body {
   display: inherit;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
-  border: 2px solid blue;
 }
 @media only screen and (max-width: 768px) {
   .area-2 {
@@ -145,7 +142,6 @@ body {
   grid-area: area-3;
   display: flex;
   align-items: flex-end;
-  border: 1px solid red;
 }
 .area-3 .area-3-p {
   color: var(--color-Gris-p);
@@ -166,11 +162,9 @@ body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 5;
   grid-area: area-4;
-  border: 1px solid red;
   display: inherit;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
-  border: 2px solid blue;
 }
 @media only screen and (max-width: 768px) {
   .area-4 {
@@ -187,7 +181,6 @@ body {
   align-items: flex-end;
   max-width: 80%;
   height: 40%;
-  border: 1px solid red;
   margin: auto;
   padding: 10px 20px;
   cursor: pointer;
@@ -377,7 +370,6 @@ body {
   cursor: pointer;
   background-color: var(--bg-color-cards);
   box-shadow: 0 1px 6px 0 #20212447;
-  border: 3px solid green;
 }
 
 .cards-small-icon {
@@ -385,7 +377,6 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
-  border: 2px solid brown;
   margin: 15px 35px 5px 15px;
 }
 .cards-small-icon p {

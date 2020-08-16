@@ -108,7 +108,6 @@ body {
                          ". area-3 area-3 area-3 ."
                          ". area-4 area-4 area-4 ."
                          ". area-4 area-4 area-4 .";
-    border: 2px solid blue;
     background-color: var(--bg-color);
     grid-gap: 12px;
     /*Incluir Version Mobil*/
@@ -121,7 +120,6 @@ body {
 
 .area-1 {
     grid-area: area-1;
-    border: 1px solid red;
     background-color: var(--bg-color-header);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -137,7 +135,6 @@ body {
     display: inherit;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
-    border: 2px solid blue;
     @include media(mobile-only){
         display: flex;
         flex-direction: column;
@@ -150,7 +147,6 @@ body {
     grid-area: area-3;
     display: flex;
     align-items: flex-end;
-    border: 1px solid red;
     .area-3-p {
         color: var(--color-Gris-p);
         font-weight: var(--Weight-Gris-p);
@@ -165,11 +161,9 @@ body {
 
 .area-4 {
     grid-area: area-4;
-    border: 1px solid red;
     display: inherit;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
-    border: 2px solid blue;
     @include media(mobile-only){
         display: flex;
         flex-direction: column;
@@ -184,7 +178,6 @@ body {
     align-items: flex-end;
     max-width: 80%;
     height: 40%;
-    border: 1px solid red;
     margin: auto;
     padding: 10px 20px;
     cursor: pointer;
@@ -374,7 +367,6 @@ body {
     cursor: pointer;
     background-color: var(--bg-color-cards);
     box-shadow: 0 1px 6px 0 #20212447;
-    border: 3px solid green;
 }
 
 .cards-small-icon {
@@ -382,7 +374,6 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    border: 2px solid brown;
     margin: 15px 35px 5px 15px;
     p {
         color: var(--color-Gris-p);
