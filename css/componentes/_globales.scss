@@ -111,6 +111,11 @@ body {
     border: 2px solid blue;
     background-color: var(--bg-color);
     grid-gap: 12px;
+    /*Incluir Version Mobil*/
+    @include media(mobile-only){
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
@@ -121,6 +126,9 @@ body {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     height: 260px;
+    @include media(mobile-only){
+        height: 180px;
+    }
 }
 
 .area-2 {
@@ -130,6 +138,12 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
     border: 2px solid blue;
+    @include media(mobile-only){
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        margin-top: -90px;
+    }
 }
 
 .area-3 {
@@ -143,6 +157,10 @@ body {
         font-size: calc(0.7em + 1vw);
         padding-bottom: 15px;
     }
+    @include media(mobile-only){
+        margin-left: 20px;
+        font-size: calc(1.2em + 1.2vw);
+    }
 }
 
 .area-4 {
@@ -152,6 +170,11 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
     border: 2px solid blue;
+    @include media(mobile-only){
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+    }
 }
 
 /*Encabezado*/
