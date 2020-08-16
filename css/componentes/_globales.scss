@@ -262,3 +262,23 @@ body {
         font-weight: var(--Fuente-Weight1);
     }
 }
+
+.cards-large:hover {
+    background-color: var(--bg-color-cards-hover);
+}
+
+.item-cards-large-1 {
+    border-top: 4px solid var(--color-Facebook);
+}
+
+.item-cards-large-2 {
+    border-top: 4px solid var(--color-Twitter);
+}
+
+.item-cards-large-3 {
+    border-top: 4px solid var(--color-Instagram);
+}
+
+.item-cards-large-4 {
+    border-top: 4px solid var(--color-YouTube);
+}
