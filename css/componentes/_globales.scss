@@ -20,6 +20,20 @@
     --color-Very-Pale-Blue: hsl(225, 100%, 98%);
     --color-Light-Grayish-Blue1: hsl(227, 47%, 96%);
     --color-Dark-Grayish-Blue2: hsl(228, 12%, 44%);
+
+     /*Declarando Variables del font-weight*/
+     --Fuente-Weight1: 400;
+     --Fuente-Weight2: 700;
+ 
+     --primary-color: #302AE6;
+     --secondary-color: #536390;
+     --font-color: var(--color-Very-Dark-Blue1);
+     --bg-color: var(--color-White);
+     --bg-color-header: var(--color-Very-Pale-Blue);
+     --bg-color-cards: var(--color-Light-Grayish-Blue1);
+     --bg-color-cards-hover: var(--color-Toggle-Gray);
+     --heading-color: #292922;
+ 
 }
 
 * {
