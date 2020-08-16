@@ -267,3 +267,34 @@ body {
 .item-cards-large-4 {
   border-top: 4px solid var(--color-YouTube);
 }
+
+.cards-large-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards-large-icon a img {
+  margin: 30px 10px 10px 10px;
+}
+.cards-large-icon p {
+  margin-top: 20px;
+  color: var(--color-Gris-p);
+}
+
+.cards-large-icon-up {
+  color: var(--color-Lime-Green);
+  font-size: 20px;
+}
+.cards-large-icon-up a img {
+  margin-bottom: 35px;
+  margin-right: 5px;
+}
+
+.cards-large-icon-down {
+  color: var(--color-Bright-Red);
+  font-size: 20px;
+}
+.cards-large-icon-down a img {
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
