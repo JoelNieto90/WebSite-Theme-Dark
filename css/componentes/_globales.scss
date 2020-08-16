@@ -52,3 +52,44 @@ body {
     background-color: var(--bg-color);
     grid-gap: 12px;
 }
+
+
+.area-1 {
+    grid-area: area-1;
+    border: 1px solid red;
+    background-color: var(--bg-color-header);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 260px;
+}
+
+.area-2 {
+    grid-area: area-2;
+    z-index: 1;
+    display: inherit;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    border: 2px solid blue;
+}
+
+.area-3 {
+    grid-area: area-3;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid red;
+    .area-3-p {
+        color: var(--color-Gris-p);
+        font-weight: var(--Weight-Gris-p);
+        font-size: calc(0.7em + 1vw);
+        padding-bottom: 15px;
+    }
+}
+
+.area-4 {
+    grid-area: area-4;
+    border: 1px solid red;
+    display: inherit;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    border: 2px solid blue;
+}
