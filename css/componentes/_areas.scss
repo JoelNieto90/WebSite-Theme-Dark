@@ -1,0 +1,73 @@
+
+.container {
+    display: grid;
+    grid-template-rows: 135px 245px 80px 140px 140px;
+    grid-template-columns: 165px 1fr 1fr 1fr 165px;
+    height: 100%;
+    grid-template-areas: "area-1 area-1 area-1 area-1 area-1 "
+                         ". area-2 area-2 area-2 ."
+                         ". area-3 area-3 area-3 ."
+                         ". area-4 area-4 area-4 ."
+                         ". area-4 area-4 area-4 .";
+    background-color: var(--bg-color);
+    grid-gap: 12px;
+    /*Incluir Version Mobil*/
+    @include media(mobile-only){
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.area-1 {
+    grid-area: area-1;
+    background-color: var(--bg-color-header);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 260px;
+    @include media(mobile-only){
+        height: 180px;
+    }
+}
+
+.area-2 {
+    grid-area: area-2;
+    z-index: 1;
+    display: inherit;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    @include media(mobile-only){
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        margin-top: -90px;
+    }
+}
+
+.area-3 {
+    grid-area: area-3;
+    display: flex;
+    align-items: flex-end;
+    .area-3-p {
+        color: var(--color-Gris-p);
+        font-weight: var(--Weight-Gris-p);
+        font-size: calc(0.7em + 1vw);
+        padding-bottom: 15px;
+    }
+    @include media(mobile-only){
+        margin-left: 20px;
+        font-size: calc(1.2em + 1.2vw);
+    }
+}
+
+.area-4 {
+    grid-area: area-4;
+    display: inherit;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    @include media(mobile-only){
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+    }
+}
