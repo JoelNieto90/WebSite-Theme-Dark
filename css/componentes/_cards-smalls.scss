@@ -1,0 +1,62 @@
+/*Cards Small - Area 4*/
+.cards-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--bg-color-cards);
+    box-shadow: 0 1px 6px 0 #20212447;
+}
+
+.cards-small-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 15px 35px 5px 15px;
+    p {
+        color: var(--color-Gris-p);
+        font-weight: var(--Weight-Gris-p);
+        font-size: calc(0.5em + 0.5vw);
+        padding-left: 8px;
+        @include media(mobile-only){
+            font-size: calc(0.8em + 0.8vw);
+        }
+    }
+    h1 {
+        color: var(--color-Negro-h1);
+        font-size: calc(1em + 1vw);
+        font-weight: var(--Fuente-Weight2);
+        padding-left: 10px;
+    }
+    .cards-small-img {
+        display: flex;
+        margin-top: 20px;
+    }
+}
+
+.cards-small-icon-up {
+    color: var(--color-Lime-Green);
+    font-size: 20px;
+    a img {
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+}
+
+.cards-small-icon-down {
+    color: var(--color-Bright-Red);
+    font-size: 20px;
+    a img {
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+}
+
+.cards-small:hover {
+    background-color: var(--bg-color-cards-hover);
+}
