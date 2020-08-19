@@ -6,21 +6,28 @@
     max-height: 100%;
     max-width: 100%;
     border-radius: 5px;
+    padding-bottom: 5%;
     text-align: center;
     cursor: pointer;
     background-color: var(--bg-color-cards);
     box-shadow: 0 1px 6px 0 #20212447;
     h1 {
         color: var(--color-Negro-h1);
-        font-size: calc(2em + 2vw);
+        font-size: calc(0.6em + 2.5vw);
         font-weight: var(--Fuente-Weight2);
+        @include media(tablet-p-only){
+            font-size: calc(1.3em + 2.5vw);
+        }
     }
     h3 {
         color: var(--color-Gris-p);
-        font-size: 16px;
+        font-size: calc(0.4em + 0.4vw);
         letter-spacing: 3px;
         text-transform: uppercase;
         font-weight: var(--Fuente-Weight1);
+        @include media(tablet-p-only){
+            font-size: calc(0.5em + 0.5vw);
+        }
     }
 }
 
@@ -38,7 +45,6 @@
 
 .item-cards-large-3 {
     border-style: solid;
-    border-width: 4px;
 	border-image: var(--linear-Instagram-gradient);
     border-image-slice: 100% 1% 0 1%;
 }
@@ -52,29 +58,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    a img {
-        margin: 30px 10px 10px 10px;
-    }
+    margin-top: 8%;
+    margin-bottom: 2.5%;
     p {
-        margin-top: 20px;
+        font-size: calc(0.5em + 0.5vw);
+        padding-left: 5px;
         color: var(--color-Gris-p);
+        @include media(tablet-p-only){
+            font-size: calc(0.6em + 0.5vw);
+        }
     }
 }
 
 .cards-large-icon-up {
     color: var(--color-Lime-Green);
-    font-size: 20px;
+    font-size: calc(0.5em + 0.5vw);
     a img {
-        margin-bottom: 35px;
+        margin-bottom: 4px;
         margin-right: 5px;
+    }
+    @include media(tablet-p-only){
+        font-size: calc(0.7em + 0.6vw);
     }
 }
 
 .cards-large-icon-down {
     color: var(--color-Bright-Red);
-    font-size: 20px;
+    font-size: calc(0.5em + 0.5vw);
     a img {
-        margin-bottom: 20px;
+        margin-bottom: 4px;
         margin-right: 5px;
     }
 }
