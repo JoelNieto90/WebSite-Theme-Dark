@@ -7,7 +7,8 @@
   --color-Bright-Red: hsl(356, 69%, 56%);
   --color-Facebook: hsl(195, 100%, 50%);
   --color-Twitter: hsl(203, 89%, 53%);
-  --color-Instagram: hsl(37, 97%, 70%);
+  --color-Instagram: linear-gradient(hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
+  --linear-Instagram-gradient:linear-gradient(to right, hsl(37, 97%, 70%) 0%, hsl(329, 70%, 58%) 100%);
   --color-YouTube: hsl(348, 97%, 39%);
   --color-Toogle: linear-gradient(hsl(210, 78%, 56%) to hsl(146, 68%, 55%));
   --color-Toggle-Gray: hsl(227, 11%, 84%);
@@ -42,7 +43,8 @@
   --color-Bright-Red: hsl(356, 69%, 56%);
   --color-Facebook: hsl(195, 100%, 50%);
   --color-Twitter: hsl(203, 89%, 53%);
-  --color-Instagram: hsl(37, 97%, 70%);
+  --color-Instagram: linear-gradient(hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
+  --linear-Instagram-gradient:linear-gradient(to right, hsl(37, 97%, 70%) 0%, hsl(329, 70%, 58%) 100%);
   --color-YouTube: hsl(348, 97%, 39%);
   --color-Toogle: linear-gradient(hsl(210, 78%, 56%) to hsl(146, 68%, 55%));
   --color-Toggle-Gray: hsl(230, 22%, 74%);
@@ -323,7 +325,10 @@ body {
 }
 
 .item-cards-large-3 {
-  border-top: 4px solid var(--color-Instagram);
+  border-style: solid;
+  border-width: 4px;
+  border-image: var(--linear-Instagram-gradient);
+  border-image-slice: 100% 1% 0 1%;
 }
 
 .item-cards-large-4 {

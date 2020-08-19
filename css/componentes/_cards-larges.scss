@@ -37,7 +37,10 @@
 }
 
 .item-cards-large-3 {
-    border-top: 4px solid var(--color-Instagram);
+    border-style: solid;
+    border-width: 4px;
+	border-image: var(--linear-Instagram-gradient);
+    border-image-slice: 100% 1% 0 1%;
 }
 
 .item-cards-large-4 {
