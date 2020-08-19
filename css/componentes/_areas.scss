@@ -65,6 +65,8 @@
     display: inherit;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
+    //Agregue esta linea para corregir el espacio de hasta abajo
+    padding-bottom: 50px;
     @include media(mobile-only){
         display: flex;
         flex-direction: column;
