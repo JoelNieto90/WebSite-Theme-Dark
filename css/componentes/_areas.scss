@@ -41,6 +41,7 @@
     grid-area: area-2;
     z-index: 1;
     display: inherit;
+    min-width: 100%;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
     @include media(mobile-only){

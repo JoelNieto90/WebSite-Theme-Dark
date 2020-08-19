@@ -138,6 +138,7 @@ body {
   grid-area: area-2;
   z-index: 1;
   display: inherit;
+  min-width: 100%;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
 }
@@ -338,6 +339,11 @@ body {
   font-size: calc(0.6em + 2.5vw);
   font-weight: var(--Fuente-Weight2);
 }
+@media only screen and (max-width: 768px) {
+  .cards-large h1 {
+    font-size: calc(1.5em + 2.5vw);
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
   .cards-large h1 {
     font-size: calc(1.3em + 2.5vw);
@@ -353,6 +359,11 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
   .cards-large h3 {
     font-size: calc(0.5em + 0.5vw);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cards-large h3 {
+    font-size: calc(0.5em + 0.6vw);
   }
 }
 
@@ -395,6 +406,11 @@ body {
     font-size: calc(0.6em + 0.5vw);
   }
 }
+@media only screen and (max-width: 768px) {
+  .cards-large-icon p {
+    font-size: calc(0.5em + 0.7vw);
+  }
+}
 
 .cards-large-icon-up {
   color: var(--color-Lime-Green);
@@ -409,6 +425,11 @@ body {
     font-size: calc(0.7em + 0.6vw);
   }
 }
+@media only screen and (max-width: 768px) {
+  .cards-large-icon-up {
+    font-size: calc(0.7em + 0.6vw);
+  }
+}
 
 .cards-large-icon-down {
   color: var(--color-Bright-Red);
@@ -417,6 +438,16 @@ body {
 .cards-large-icon-down a img {
   margin-bottom: 4px;
   margin-right: 5px;
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
+  .cards-large-icon-down {
+    font-size: calc(0.7em + 0.6vw);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cards-large-icon-down {
+    font-size: calc(0.7em + 0.6vw);
+  }
 }
 
 /*Cards Small - Area 4*/
@@ -438,7 +469,7 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
-  margin: 15px 35px 5px 15px;
+  margin: 15px 30px 5px 15px;
 }
 .cards-small-icon p {
   color: var(--color-Gris-p);
@@ -453,7 +484,7 @@ body {
 }
 .cards-small-icon h1 {
   color: var(--color-Negro-h1);
-  font-size: calc(0.5em + 1.4vw);
+  font-size: calc(0.5em + 1.2vw);
   font-weight: var(--Fuente-Weight2);
   padding-left: 10px;
 }
@@ -464,7 +495,7 @@ body {
 
 .cards-small-icon-up {
   color: var(--color-Lime-Green);
-  font-size: 20px;
+  font-size: calc(0.5em + 0.5vw);
 }
 .cards-small-icon-up a img {
   margin-bottom: 10px;
@@ -473,7 +504,7 @@ body {
 
 .cards-small-icon-down {
   color: var(--color-Bright-Red);
-  font-size: 20px;
+  font-size: calc(0.5em + 0.5vw);
 }
 .cards-small-icon-down a img {
   margin-bottom: 10px;

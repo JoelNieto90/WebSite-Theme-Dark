@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    margin: 15px 35px 5px 15px;
+    margin: 15px 30px 5px 15px;
     p {
         color: var(--color-Gris-p);
         font-weight: var(--Weight-Gris-p);
@@ -29,7 +29,7 @@
     }
     h1 {
         color: var(--color-Negro-h1);
-        font-size: calc(0.5em + 1.4vw);
+        font-size: calc(0.5em + 1.2vw);
         font-weight: var(--Fuente-Weight2);
         padding-left: 10px;
     }
@@ -41,7 +41,7 @@
 
 .cards-small-icon-up {
     color: var(--color-Lime-Green);
-    font-size: 20px;
+    font-size: calc(0.5em + 0.5vw);
     a img {
         margin-bottom: 10px;
         margin-right: 5px;
@@ -50,7 +50,7 @@
 
 .cards-small-icon-down {
     color: var(--color-Bright-Red);
-    font-size: 20px;
+    font-size: calc(0.5em + 0.5vw);
     a img {
         margin-bottom: 10px;
         margin-right: 5px;
