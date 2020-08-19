@@ -65,7 +65,8 @@
     }
     
     .slider {
-        background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+        //Cambiar color al button
+        background: var(--button-theme-dark);
         bottom: 0;
         cursor: pointer;
         left: 0;
